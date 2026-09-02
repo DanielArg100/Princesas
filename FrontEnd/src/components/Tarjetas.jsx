@@ -27,8 +27,9 @@ function Tarjetas() {
         {BaseDatos.map((i) => (
           <div key={i.ID_Princesa} className="Tarjeta">
             <h1>{i.Nombre}</h1>
-            <h2>{i.Historia}</h2>
-            <h3>{i.Personalidad}</h3>
+            <h2>{i.Pelicula}</h2>
+            <h3>{i.Tiempo}</h3>
+            <h3>{i.Villano}</h3>
           </div>
         ))}
       </div>

@@ -17,8 +17,9 @@ const ConexionBD = new sql.Database('./src/db/data.db', (error) => {
                 CREATE TABLE IF NOT EXISTS Princesas(
                     ID_Princesa INTEGER PRIMARY KEY AUTOINCREMENT,
                     Nombre TEXT NOT NULL,
-                    Historia TEXT NOT NULL,
-                    Personalidad TEXT NOT NULL
+                    Pelicula TEXT NOT NULL,
+                    Tiempo TEXT NOT NULL,
+                    Villano TEXT NOT NULL
                 )
             `,(error)=>{
                 if(error){
