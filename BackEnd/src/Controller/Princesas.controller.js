@@ -5,6 +5,8 @@ const ConexionBD = require('../db/database');
 
 // - Tiana Merida Pocahontas
 
+// - ID, Nombre, Pelicula, Tiempo, Villano.
+
 const verTablaPrincesas = (req, res) => {
     // --> Consulta SQL para seleccionar todos los datos de la tabla Princesas
     const query = `SELECT * FROM Princesas`
