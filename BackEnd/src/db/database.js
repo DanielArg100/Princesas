@@ -1,4 +1,5 @@
 const sql = require('sqlite3').verbose()
+const path = require("path")
 const { ERROR } = require('sqlite3')
 
 //--> Crea la Base de Datos y la Tabla Princesas si no existen

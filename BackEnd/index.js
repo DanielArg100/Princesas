@@ -24,6 +24,6 @@ App.use('/',Rutas)
 
 // --> Inicia el servidor en el puerto especificado y muestra un mensaje en la consola indicando que el servidor está corriendo
 App.listen(PORT,()=>{
-    console.log(`🍎 http://localhost:${PORT}`)
+    console.log(`http://localhost:${PORT}`)
 })
 

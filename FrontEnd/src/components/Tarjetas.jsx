@@ -1,12 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { api } from "../Services/api";
-import "./Tarjetas.css"
+import "./TarjetasP.css"
 
 function Tarjetas() {
   // --> DB:Vacio, Capturamos
   const [BaseDatos, setBaseDeDatos] = useState([]);
-
+  console.log(BaseDatos," + ",setBaseDeDatos)
   useEffect(() => {
     // --> Metodo para ver tablas
     const verTablas = async () => {
@@ -27,8 +27,8 @@ function Tarjetas() {
         {BaseDatos.map((i) => (
           <div key={i.ID_Princesa} className="Tarjeta">
             <h1>{i.Nombre}</h1>
-            <h2>{i.Descripción}</h2>
-            <h3>{i.Dis}</h3>
+            <h2>{i.Historia}</h2>
+            <h3>{i.Personalidad}</h3>
           </div>
         ))}
       </div>
